@@ -9,17 +9,18 @@ export const metadata: Metadata = {
   description: 'Mohammad Omar personal portfolio',
 };
 
-function RootLayout({ children }: { children: React.ReactNode }) {
+function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en">
-      <body className="antialiased bg-background1 text-white">
+      <body className="antialiased font-ubuntu bg-background1 text-white">
         <Header />
 
-        <main>{children}</main>
+        <main className="spacing-x">{children}</main>
 
         <Footer />
       </body>
     </html>
   );
 }
+
 export default RootLayout;

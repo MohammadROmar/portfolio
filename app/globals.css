@@ -51,3 +51,7 @@
 @utility content-text {
   @apply font-ibm-plex-mono;
 }
+
+@utility spacing-x {
+  @apply px-6 md:px-16 lg:px-32;
+}
