@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 300;
+  src: url(../assets/fonts/Ubuntu/light.ttf);
+}
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 400;
+  src: url(../assets/fonts/Ubuntu/regular.ttf);
+}
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 500;
+  src: url(../assets/fonts/Ubuntu/medium.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexMono;
+  font-weight: 400;
+  src: url(../assets/fonts/IBMPlexMono/regular.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexMono;
+  font-weight: 500;
+  src: url(../assets/fonts/IBMPlexMono/medium.ttf);
+}
+
+@theme {
+  --font-ubuntu: Ubuntu;
+  --font-ibm-plex-mono: IBMPlexMono;
+
+  --color-brand1: #12f7d6;
+  --color-brand2: #98faec;
+
+  --color-background1: #292f36;
+  --color-background2: #1a1e23;
+
+  --breakpoint-sm: 360;
+  --breakpoint-md: 768;
+  --breakpoint-lg: 1280;
+  --breakpoint-xl: 1920;
+}
+
+@utility title {
+  @apply font-ubuntu font-medium text-4xl text-brand1;
+}
+
+@utility content-text {
+  @apply font-ibm-plex-mono;
+}
