@@ -1,6 +1,6 @@
 import type { ComponentPropsWithoutRef, FC } from 'react';
 
-export type SocialmediaLink = {
+export type NavigationLink = {
   label: string;
   to: string;
   icon: FC<ComponentPropsWithoutRef<'svg'>>;

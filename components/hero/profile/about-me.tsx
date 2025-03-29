@@ -8,6 +8,8 @@ export default function AboutMe() {
       <Image
         src={profileImg}
         alt="An image of a developer."
+        priority
+        fetchPriority="high"
         className="m-auto pb-4"
       />
 

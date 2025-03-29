@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import './globals.css';
+import NavigationBar from '@/components/nav-bar';
 
 export const metadata: Metadata = {
   title: 'MohammadROmar',
@@ -14,6 +15,8 @@ function RootLayout({ children }: React.PropsWithChildren) {
     <html lang="en">
       <body className="antialiased font-ubuntu bg-background1 text-white">
         <Header />
+
+        <NavigationBar />
 
         <main className="spacing-x">{children}</main>
 
