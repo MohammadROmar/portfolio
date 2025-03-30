@@ -3,7 +3,7 @@ import SocialmediaLinks from './socialmedia-links';
 
 export default function Header() {
   return (
-    <header className="absolute top-0 left-0 right-0 py-4 spacing-x">
+    <header className="absolute top-0 left-0 right-0 py-4 spacing">
       <div className=" flex items-center justify-between">
         <Logo />
 

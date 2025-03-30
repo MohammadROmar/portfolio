@@ -44,14 +44,6 @@
   --breakpoint-xl: 1920;
 }
 
-@utility title {
-  @apply font-ubuntu font-medium text-4xl text-brand1;
-}
-
-@utility content-text {
-  @apply font-ibm-plex-mono;
-}
-
-@utility spacing-x {
+@utility spacing {
   @apply p-6 md:p-16 lg:p-32;
 }

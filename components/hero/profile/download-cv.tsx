@@ -1,6 +1,6 @@
 import DownloadIcon from '@/assets/icons/download';
 
-export default function DwnloadCV() {
+export default function DownloadCV() {
   return (
     <a
       href="/cv.pdf"

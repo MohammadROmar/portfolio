@@ -28,7 +28,7 @@ export default function Bio() {
         </span>
 
         <span>
-          I am also a fourth-year student at{' '}
+          I am a fourth-year student at{' '}
           <a
             href="https://damascusunivercity.edu.sy/ite/"
             target="_blank"
@@ -37,6 +37,11 @@ export default function Bio() {
           >
             Information Technology Engineering - Damascus University.
           </a>
+        </span>
+
+        <span>
+          I also have a basic understanding of Flutter, enabling me to build
+          simple and responsive mobile applications.
         </span>
       </CodeTag>
     </div>

@@ -1,10 +1,13 @@
-export default function TypescriptLogo() {
+export default function TypescriptLogo(
+  props: React.ComponentPropsWithoutRef<'svg'>
+) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="800"
       height="800"
       viewBox="0 0 32 32"
+      {...props}
     >
       <rect width="28" height="28" x="2" y="2" fill="#3178c6" rx="1.312"></rect>
       <path

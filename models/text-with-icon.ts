@@ -1,6 +1,6 @@
 import type { ComponentPropsWithoutRef, FC } from 'react';
 
-export type PersonalInfo = {
+export type TextWithIcon = {
   text: string;
   icon: FC<ComponentPropsWithoutRef<'svg'>>;
 };

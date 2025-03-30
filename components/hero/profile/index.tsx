@@ -1,7 +1,7 @@
 import AboutMe from './about-me';
 import Details from './details';
 import CoreSkills from './core-skills';
-import DwnloadCV from './download-cv';
+import DownloadCV from './download-cv';
 
 export default function Profile() {
   return (
@@ -12,7 +12,7 @@ export default function Profile() {
 
       <CoreSkills />
 
-      <DwnloadCV />
+      <DownloadCV />
     </div>
   );
 }
