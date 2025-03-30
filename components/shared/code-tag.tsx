@@ -5,7 +5,7 @@ type CodeTagProps = {
   className?: string;
 } & PropsWithChildren;
 
-const STYLES = 'font-ibm-plex-mono text-xs text-brand1';
+const STYLES = 'font-ibm-plex-mono text-xs text-brand2';
 
 function CodeTag({ tag, className, children }: CodeTagProps) {
   const Component = tag;

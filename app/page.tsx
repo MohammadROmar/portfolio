@@ -1,4 +1,3 @@
-import LogoIcon from '@/assets/icons/logo';
 import About from '@/components/about';
 import Contact from '@/components/contact';
 import Hero from '@/components/hero';

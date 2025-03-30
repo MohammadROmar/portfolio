@@ -1,4 +1,4 @@
-import type { SocialmediaLink as SocialmediaLinkProps } from '@/models/socialmedia-link';
+import type { NavigationLink as SocialmediaLinkProps } from '@/models/socialmedia-link';
 
 function SocialmediaLink({ label, to, icon: Icon }: SocialmediaLinkProps) {
   return (
