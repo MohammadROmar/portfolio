@@ -28,6 +28,26 @@
   src: url(../assets/fonts/IBMPlexMono/medium.ttf);
 }
 
+@layer base {
+  @supports not (-webkit-font-smoothing: antialiased) {
+    * {
+      scrollbar-color: var(--color-brand1) var(--color-background1);
+    }
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2 sm:w-4;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-background1 border-[1] sm:border-2 border-brand1 rounded-full;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply my-2 bg-brand1 rounded-full cursor-pointer border-2 sm:border-4 border-background1;
+  }
+}
+
 @theme {
   --font-ubuntu: Ubuntu;
   --font-ibm-plex-mono: IBMPlexMono;
