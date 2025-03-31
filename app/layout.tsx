@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 function RootLayout({ children }: React.PropsWithChildren) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className="antialiased font-ubuntu bg-background1 text-white">
         <Header />
 

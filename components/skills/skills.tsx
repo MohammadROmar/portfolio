@@ -2,7 +2,7 @@ import { skills } from '@/data/skills';
 
 export default function Skills() {
   return (
-    <ul className="flex gap-20 font-ibm-plex-mono text-xs text-background1 text-center">
+    <ul className="flex max-md:flex-col gap-20 font-ibm-plex-mono text-xs text-background1 text-center">
       {skills.map(({ text, subtext, icon: Icon }) => (
         <li
           key={text}

@@ -14,17 +14,17 @@ export default function SkillsList({ title, items }: LanguagesProps) {
         {title}
       </h4>
 
-      <ul className="flex justify-center items-center gap-20 text-xs">
+      <ul className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-wrap lg:justify-center lg:items-center gap-20 text-xs">
         {items.map(({ text, color, icon: Icon }) => (
           <li
             key={text}
             className="flex flex-col items-center gap-2"
             style={{ '--icon-color': color } as CSSProperties}
           >
-            <div className="rounded-full p-4 box-content bg-[var(--icon-color)]">
+            <div className="rounded-full p-6 box-content bg-[var(--icon-color)]">
               <Icon className="w-8 h-8 flex items-center justify-center" />
             </div>
-            <h5 className="text-[var(--icon-color)]">{text}</h5>
+            <h5 className="text-[var(--icon-color)] text-center">{text}</h5>
           </li>
         ))}
       </ul>
