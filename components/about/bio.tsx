@@ -12,6 +12,7 @@ export default function Bio() {
           <span className="text-brand1"> HTML</span>,
           <span className="text-brand1"> Tailwind CSS</span>,
           <span className="text-brand1"> JS</span>,
+          <span className="text-brand1"> TS</span>,
           <span className="text-brand1"> React.js</span> and
           <span className="text-brand1"> Next.js</span>.
         </span>

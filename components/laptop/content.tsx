@@ -1,15 +1,16 @@
-import type { PropsWithChildren } from 'react';
 import { Html } from '@react-three/drei';
 
-function LaptopContent({ children }: PropsWithChildren) {
+import ProjectsList from '../projects/delete/list';
+
+function LaptopContent() {
   return (
     <Html
       position={[0, 10.65, -10.67]}
       transform
       occlude="blending"
-      className="w-[1182] h-[685] bg-background1 overflow-y-auto pt-4"
+      className="w-[1182] h-[685] bg-background1 overflow-y-auto "
     >
-      {children}
+      <ProjectsList />
     </Html>
   );
 }

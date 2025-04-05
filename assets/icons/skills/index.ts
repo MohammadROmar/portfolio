@@ -4,6 +4,7 @@ import JavascriptIcon from './javascript';
 import TypescriptIcon from './typescript';
 import DartIcon from './dart';
 
+import SQLIcon from './sql';
 import FlutterIcon from './flutter';
 import ThreeJsIcon from './three-js';
 import TailwindcssIcon from './tailwindcss';
@@ -21,6 +22,7 @@ export {
   JavascriptIcon,
   TypescriptIcon,
   DartIcon,
+  SQLIcon,
   FlutterIcon,
   ThreeJsIcon,
   TailwindcssIcon,

@@ -4,6 +4,7 @@ import {
   JavascriptIcon,
   TypescriptIcon,
   DartIcon,
+  SQLIcon,
   FlutterIcon,
   ThreeJsIcon,
   TailwindcssIcon,
@@ -22,14 +23,15 @@ export const languages: Technology[] = [
   { text: 'Javascript', icon: JavascriptIcon, color: '#F7DF1E' },
   { text: 'Typescript', icon: TypescriptIcon, color: '#3178c6' },
   { text: 'Dart', icon: DartIcon, color: '#3178c6' },
+  { text: 'SQL', icon: SQLIcon, color: '#ffda44' },
 ];
 
 export const technologies: Technology[] = [
   { text: 'Flutter', icon: FlutterIcon, color: '#00569E' },
-  { text: 'Three.js', icon: ThreeJsIcon, color: 'black' },
-  { text: 'TailwindCss', icon: TailwindcssIcon, color: '#38bdf8' },
+  { text: 'Three.js', icon: ThreeJsIcon, color: 'white' },
+  { text: 'Tailwind CSS', icon: TailwindcssIcon, color: '#38bdf8' },
   { text: 'React.js', icon: ReactJsIcon, color: '#53C1DE' },
-  { text: 'Next.js', icon: NextJsIcon, color: 'black' },
+  { text: 'Next.js', icon: NextJsIcon, color: 'white' },
 ];
 
 export const packages: Technology[] = [

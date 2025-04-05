@@ -1,6 +1,5 @@
 'use client';
 
-import type { PropsWithChildren } from 'react';
 import * as THREE from 'three';
 import { useGLTF } from '@react-three/drei';
 import { GLTF } from 'three-stdlib';
@@ -21,7 +20,7 @@ type GLTFResult = GLTF & {
   };
 };
 
-function LaptopModel({ children }: PropsWithChildren) {
+function LaptopModel() {
   const gltf = useGLTF('/laptop.glb') as unknown;
   const { nodes, materials } = gltf as GLTFResult;
 
@@ -30,7 +29,7 @@ function LaptopModel({ children }: PropsWithChildren) {
 
   return (
     <LaptopWrapper>
-      <LaptopContent>{children}</LaptopContent>
+      <LaptopContent />
 
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
