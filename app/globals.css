@@ -64,6 +64,10 @@
   --breakpoint-xl: 1920;
 }
 
+@utility max-container {
+  @apply max-w-[1440px] mx-auto;
+}
+
 @utility spacing {
   @apply p-6 md:p-16 lg:p-32;
 }

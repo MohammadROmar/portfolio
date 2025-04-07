@@ -1,6 +1,6 @@
 import { Html } from '@react-three/drei';
 
-import Overview from '../hero/overview';
+import Profile from '../profile';
 
 function LaptopContent() {
   return (
@@ -11,7 +11,7 @@ function LaptopContent() {
       className="w-[1182] h-[685] bg-background1 overflow-hidden"
     >
       <div className="w-full h-full flex justify-center items-center scale-150">
-        <Overview />
+        <Profile />
       </div>
     </Html>
   );

@@ -7,7 +7,7 @@ import type { Project } from '@/models/project';
 function ProjectCard(project: Project) {
   return (
     <li className="flex flex-col gap-2 rounded-2xl bg-background1 p-3 shadow-lg shadow-brand1/5 hover:shadow-brand1/10 transition-shadow duration-300">
-      <div className="relative rounded-[inherit] overflow-hidden border-[1] border-brand1/50">
+      <div className="relative rounded-lg overflow-hidden border-[1] border-brand1/50">
         <Image src={project.image} alt={project.title} />
 
         <ProjectsLinks github={project.github} demo={project.live} />
