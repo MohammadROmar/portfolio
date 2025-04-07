@@ -2,10 +2,10 @@ import LaptopModel from '.';
 
 export default function Scene() {
   return (
-    <group>
+    <group scale={0.9}>
       <directionalLight intensity={3} />
 
-      <group scale={1} position={[0, 1, 0]}>
+      <group scale={1.3} position={[3.5, 0, 0]}>
         <LaptopModel />
       </group>
     </group>

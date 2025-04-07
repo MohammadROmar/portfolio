@@ -28,6 +28,7 @@ function LaptopWrapper({ children }: PropsWithChildren) {
       );
     }
   });
+
   return (
     <group ref={modelRef} dispose={null} rotation={[0, Math.PI, 0]}>
       {children}

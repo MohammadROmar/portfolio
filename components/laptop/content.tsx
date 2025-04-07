@@ -1,6 +1,6 @@
 import { Html } from '@react-three/drei';
 
-import ProjectsList from '../projects/delete/list';
+import Overview from '../hero/overview';
 
 function LaptopContent() {
   return (
@@ -8,9 +8,11 @@ function LaptopContent() {
       position={[0, 10.65, -10.67]}
       transform
       occlude="blending"
-      className="w-[1182] h-[685] bg-background1 overflow-y-auto "
+      className="w-[1182] h-[685] bg-background1 overflow-hidden"
     >
-      <ProjectsList />
+      <div className="w-full h-full flex justify-center items-center scale-150">
+        <Overview />
+      </div>
     </Html>
   );
 }
