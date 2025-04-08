@@ -22,7 +22,11 @@ export default function Overview() {
         looking for a developer that likes to get stuff done,{' '}
       </CodeTag>
 
-      <Link href="/#contact" className="w-fit ml-4 flex items-center gap-4">
+      <Link
+        href="/#contact"
+        prefetch={false}
+        className="w-fit ml-4 flex items-center gap-4"
+      >
         <p className="text-3xl text-brand1">Let's Talk</p>
         <div className="rounded-full bg-gray-700 p-2">
           <MailIcon className="w-5 h-5 text-brand1" />

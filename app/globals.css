@@ -2,30 +2,14 @@
 
 @font-face {
   font-family: Ubuntu;
-  font-weight: 300;
-  src: url(../assets/fonts/Ubuntu/light.ttf);
-}
-@font-face {
-  font-family: Ubuntu;
   font-weight: 400;
   src: url(../assets/fonts/Ubuntu/regular.ttf);
-}
-@font-face {
-  font-family: Ubuntu;
-  font-weight: 500;
-  src: url(../assets/fonts/Ubuntu/medium.ttf);
 }
 
 @font-face {
   font-family: IBMPlexMono;
   font-weight: 400;
   src: url(../assets/fonts/IBMPlexMono/regular.ttf);
-}
-
-@font-face {
-  font-family: IBMPlexMono;
-  font-weight: 500;
-  src: url(../assets/fonts/IBMPlexMono/medium.ttf);
 }
 
 @layer base {
