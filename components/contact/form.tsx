@@ -1,3 +1,4 @@
+import SendIcon from '@/assets/icons/send';
 import Input from '../shared/input';
 
 export default function ContactForm() {
@@ -20,8 +21,9 @@ export default function ContactForm() {
 
       <Input id="name" label="Your message *" placeholder="Enter your needs" />
 
-      <button className="px-4 py-2 rounded-full bg-brand1 text-background1">
-        Send Message
+      <button className="px-6 py-2 flex items-center gap-4 rounded-full text-lg text-background1 bg-brand1">
+        <p>Send Message</p>
+        <SendIcon className="w-5 h-5" />
       </button>
     </form>
   );
