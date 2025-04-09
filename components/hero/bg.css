@@ -1,0 +1,19 @@
+.hero-bg {
+  background-image: radial-gradient(
+      circle at 20% 0%,
+      #8a8ff059 3.1210986267166043%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 40% 0%,
+      #98faeb33 3.1210986267166043%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 0%,
+      #12f7d531 3.1210986267166043%,
+      transparent 40%
+    ),
+    radial-gradient(circle at 100% 0%, #292f36 3%, transparent 40%);
+  background-blend-mode: normal, normal, normal, normal, normal, normal;
+}

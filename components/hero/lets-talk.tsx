@@ -1,13 +1,11 @@
-'use client';
-
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 
+import AnimationContainer from '../shared/animation-container';
 import MailIcon from '@/assets/icons/mail';
 
 export default function LetsTalk() {
   return (
-    <motion.div
+    <AnimationContainer
       initial={{ opacity: 0, rotate: -15 }}
       animate={{ opacity: 1, rotate: 0 }}
       transition={{ delay: 3.25 }}
@@ -23,6 +21,6 @@ export default function LetsTalk() {
           <MailIcon className="size-5 text-brand1" />
         </div>
       </Link>
-    </motion.div>
+    </AnimationContainer>
   );
 }
