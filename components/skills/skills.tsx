@@ -8,7 +8,7 @@ export default function Skills() {
           key={text}
           className="flex flex-col items-center gap-2 pr-4 pl-[1.375rem] py-2 bg-brand2 rounded-lg overflow-hidden relative before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1.5 before:bg-[#0C73B8]"
         >
-          <Icon className="w-8 h-8" />
+          <Icon className="size-8" />
 
           <h4 className="text-lg">{text}</h4>
 

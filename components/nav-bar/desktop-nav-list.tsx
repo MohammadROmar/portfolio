@@ -20,7 +20,7 @@ export default function DesktopNavList() {
           className="py-3"
         >
           <Link href={to} prefetch={false}>
-            <Icon className="w-5 h-5" />
+            <Icon className="size-5" />
           </Link>
         </motion.li>
       ))}

@@ -19,7 +19,7 @@ export default function DesktopNavigation() {
         onClick={() => setIsOpen((prevValue) => !prevValue)}
         className="p-2 rounded-full bg-white cursor-pointer"
       >
-        <GridIcon className="w-5 h-5 text-background2" />
+        <GridIcon className="size-5 text-background2" />
       </motion.button>
 
       <nav>

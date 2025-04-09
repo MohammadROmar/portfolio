@@ -21,9 +21,9 @@ export default function ContactForm() {
 
       <Input id="name" label="Your message *" placeholder="Enter your needs" />
 
-      <button className="px-6 py-2 flex items-center gap-4 rounded-full text-lg text-background1 bg-brand1">
+      <button className="px-6 py-2 flex items-center gap-4 rounded-full text-lg text-background1 bg-brand1 cursor-pointer">
         <p>Send Message</p>
-        <SendIcon className="w-5 h-5" />
+        <SendIcon className="size-5" />
       </button>
     </form>
   );

@@ -11,7 +11,7 @@ function ProjectsLinks({ github, demo }: ProjectsLinksProps) {
           href={demo}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-8 h-8 p-2 bg-background1 rounded-full"
+          className="size-8 p-2 bg-background1 rounded-full"
         >
           <LinkIcon />
         </a>
@@ -21,7 +21,7 @@ function ProjectsLinks({ github, demo }: ProjectsLinksProps) {
         href={github}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-8 h-8 p-1 bg-background1 rounded-full"
+        className="size-8 p-1 bg-background1 rounded-full"
       >
         <GithubIcon />
       </a>

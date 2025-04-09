@@ -8,7 +8,7 @@ export default function DownloadCV() {
       download
     >
       <p>Download CV</p>
-      <DownloadIcon className="w-6 h-6" />
+      <DownloadIcon className="size-6" />
     </a>
   );
 }

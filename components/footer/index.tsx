@@ -13,7 +13,7 @@ export default function Footer() {
         {socialmediaLinks.map(({ label, icon: Icon, to }, i) => (
           <li key={label}>
             <a href={to} target="_blank" rel="noopener noreferrer">
-              <Icon className="w-4 h-4 p-1 box-content text-background1 rounded-full bg-brand2" />
+              <Icon className="size-4 p-1 box-content text-background1 rounded-full bg-brand2" />
             </a>
           </li>
         ))}
