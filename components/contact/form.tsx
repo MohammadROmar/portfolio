@@ -1,30 +1,17 @@
-import SendIcon from '@/assets/icons/send';
-import Input from '../shared/input';
+'use client';
+
+import useEmail from '@/hooks/use-email';
+import FormContent from './form-content';
 
 export default function ContactForm() {
+  const { pending, errors, handleFormSubmission } = useEmail();
+
   return (
-    <form className="w-full lg:w-fit xl:w-full flex flex-col justify-center items-center gap-12">
-      <div className="w-full lg:w-fit xl:w-full flex gap-4 md:gap-8 lg:gap-16">
-        <Input
-          id="name"
-          label="Your name *"
-          placeholder="Enter your name"
-          className="flex-1"
-        />
-        <Input
-          id="name"
-          label="Your email *"
-          placeholder="Enter your email"
-          className="flex-1"
-        />
-      </div>
-
-      <Input id="name" label="Your message *" placeholder="Enter your needs" />
-
-      <button className="px-6 py-2 flex items-center gap-4 rounded-full text-lg text-background1 bg-brand1 cursor-pointer">
-        <p>Send Message</p>
-        <SendIcon className="size-5" />
-      </button>
+    <form
+      onSubmit={handleFormSubmission}
+      className="w-full lg:w-fit xl:w-full flex flex-col justify-center items-center gap-12"
+    >
+      <FormContent pending={pending} errors={errors} />
     </form>
   );
 }
