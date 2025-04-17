@@ -3,7 +3,10 @@
 import { sendEmail } from '@/utils/send-email';
 import { FormEvent, useCallback, useState } from 'react';
 
+type EmailState = 'waiting' | 'sent' | 'failed';
+
 export default function useEmail() {
+  const [emailState, setEmailState] = useState<EmailState>('waiting');
   const [pending, setPending] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
@@ -12,12 +15,22 @@ export default function useEmail() {
       event.preventDefault();
 
       setPending(true);
+      setEmailState('waiting');
 
-      const result = await sendEmail(event);
-      const errors = result?.errors;
+      try {
+        const result = await sendEmail(event);
+        const errors = result.errors;
+        const errorsNumber = Object.keys(errors).length;
 
-      if (errors && Object.keys(errors).length > 0) {
-        setErrors(errors);
+        if (errorsNumber > 0) {
+          setErrors(errors);
+        } else if (result.failed) {
+          setEmailState('failed');
+        } else if (!result.failed) {
+          setEmailState('sent');
+        }
+      } catch (_) {
+        setEmailState('failed');
       }
 
       setPending(false);
@@ -25,5 +38,5 @@ export default function useEmail() {
     []
   );
 
-  return { pending, errors, handleFormSubmission };
+  return { emailState, pending, errors, handleFormSubmission };
 }

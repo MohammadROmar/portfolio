@@ -24,7 +24,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-background1 border-[1] sm:border-2 border-brand1 rounded-full;
+    @apply bg-background1 border sm:border-2 border-brand1 rounded-full;
   }
 
   ::-webkit-scrollbar-track {
@@ -41,6 +41,11 @@
 
   --color-background1: #292f36;
   --color-background2: #1a1e23;
+
+  --color-success: #52dc6e;
+  --color-success-light: #f1f8f4;
+  --color-fail: #fb3e3f;
+  --color-fail-light: #fbefeb;
 
   --breakpoint-sm: 360;
   --breakpoint-md: 768;

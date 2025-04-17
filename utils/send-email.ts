@@ -19,7 +19,7 @@ export async function sendEmail(event: React.FormEvent<HTMLFormElement>) {
   }
 
   if (errors.name || errors.email || errors.message) {
-    return { errors };
+    return { errors, failed: true };
   }
 
   const time = new Date().toLocaleString(undefined, {
@@ -31,10 +31,14 @@ export async function sendEmail(event: React.FormEvent<HTMLFormElement>) {
 
   const emailjs = (await import('@emailjs/browser')).default;
 
-  await emailjs.send(
+  const emailStatus = await emailjs.send(
     process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
     process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
     emailContent,
     process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
   );
+
+  return emailStatus.status < 400
+    ? { errors: {}, failed: false }
+    : { errors: {}, failed: true };
 }
