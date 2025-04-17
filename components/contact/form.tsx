@@ -18,7 +18,7 @@ export default function ContactForm() {
           text={
             emailFailed
               ? 'Please try again later.'
-              : 'Your message has been received.'
+              : 'Your message has been sent.'
           }
           error={emailFailed}
         />

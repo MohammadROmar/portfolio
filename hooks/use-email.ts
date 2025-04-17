@@ -15,6 +15,7 @@ export default function useEmail() {
       event.preventDefault();
 
       setPending(true);
+      setErrors({});
       setEmailState('waiting');
 
       try {

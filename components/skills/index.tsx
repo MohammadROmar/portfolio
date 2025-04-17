@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="spacing min-h-dvh flex flex-col justify-center items-center gap-8 relative bg-[url(/patterns/pattern2.png)] bg-center bg-cover"
+      className="spacing min-h-screen flex flex-col justify-center items-center gap-8 relative bg-[url(/patterns/pattern2.png)] bg-center bg-cover"
     >
       <Title
         heading="Skills"

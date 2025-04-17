@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="lg:spacing min-h-dvh flex items-center bg-background2 bg-[url(/patterns/pattern1.png)] bg-cover bg-center"
+      className="lg:spacing min-h-screen flex items-center bg-background2 bg-[url(/patterns/pattern1.png)] bg-cover bg-center"
     >
       <div className="max-container w-full grid grid-cols-1 lg:grid-cols-7 place-items-center items-center gap-x-16 xl:gap-x-32">
         <AnimationContainer
@@ -23,7 +23,7 @@ export default function About() {
 
         <AnimationContainer
           {...revealAnimation({ x: 75 })}
-          className="w-full h-[50dvh] md:h-[70dvh] max-lg:col-span-4 col-span-3"
+          className="w-full h-[50vh] md:h-[70vh] max-lg:col-span-4 col-span-3"
         >
           <LaptopCanvas />
         </AnimationContainer>

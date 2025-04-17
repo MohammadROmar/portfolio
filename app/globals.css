@@ -44,8 +44,8 @@
 
   --color-success: #52dc6e;
   --color-success-light: #f1f8f4;
-  --color-fail: #fb3e3f;
-  --color-fail-light: #fbefeb;
+  --color-danger: #fb3e3f;
+  --color-danger-light: #fbefeb;
 
   --breakpoint-sm: 360;
   --breakpoint-md: 768;

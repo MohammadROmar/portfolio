@@ -27,7 +27,13 @@ export async function sendEmail(event: React.FormEvent<HTMLFormElement>) {
     day: '2-digit',
     year: 'numeric',
   });
-  const emailContent = { name, time, email, message };
+  const emailContent = {
+    name,
+    time,
+    email,
+    message,
+    title: `Message from ${name}`,
+  };
 
   const emailjs = (await import('@emailjs/browser')).default;
 

@@ -14,7 +14,7 @@ function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className="antialiased font-ubuntu bg-background1 text-white">
-        <div id="toasts" className="toasts"></div>
+        <div id="toasts" />
 
         <Header />
 

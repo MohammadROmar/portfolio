@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="max-container spacing min-h-dvh flex flex-col justify-center items-center gap-12"
+      className="max-container spacing min-h-screen flex flex-col justify-center items-center gap-12"
     >
       <Title heading="Contact" subheading="I'm currently available for work." />
 
