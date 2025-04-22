@@ -1,7 +1,6 @@
 import Title from '../shared/title';
-import SkillsList from './list';
 import KnownSkills from './skills';
-import { languages, technologies, packages } from '@/data/technologies';
+import Technologies from './technologies';
 
 export default function Skills() {
   return (
@@ -20,9 +19,7 @@ export default function Skills() {
 
       <KnownSkills />
 
-      <SkillsList title="Programming Languages" items={languages} />
-      <SkillsList title="Technologies" items={technologies} />
-      <SkillsList title="Packages" items={packages} />
+      <Technologies />
     </section>
   );
 }

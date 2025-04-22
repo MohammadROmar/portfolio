@@ -1,35 +1,27 @@
-import HtmlIcon from './html5';
-import CssIcon from './css3';
-import JavascriptIcon from './javascript';
-import TypescriptIcon from './typescript';
-import DartIcon from './dart';
-
-import SQLIcon from './sql';
 import FlutterIcon from './flutter';
-import ThreeJsIcon from './three-js';
-import TailwindcssIcon from './tailwindcss';
-import ReactJsIcon from './react-js';
-import NextJsIcon from './next-js';
-
 import FramerMotionIcon from './framer-motion';
-import ReactRouterDomIcon from './react-router-dom';
-import ReactQueryLogo from './react-query';
+import GithubIcon from './github';
+import NextJSIcon from './nextjs';
+import ReactQueryIcon from './react-query';
+import ReactRouterIcon from './react-router';
+import ReactJSIcon from './reactjs';
 import ReduxIcon from './redux';
+import SQLIcon from './sql';
+import TailwindCSSIcon from './tailwindcss';
+import ThreeJSIcon from './threejs';
+import TypescriptIcon from './typescript';
 
 export {
-  HtmlIcon,
-  CssIcon,
-  JavascriptIcon,
-  TypescriptIcon,
-  DartIcon,
-  SQLIcon,
   FlutterIcon,
-  ThreeJsIcon,
-  TailwindcssIcon,
-  ReactJsIcon,
-  NextJsIcon,
   FramerMotionIcon,
-  ReactRouterDomIcon,
-  ReactQueryLogo,
+  GithubIcon,
+  NextJSIcon,
+  ReactQueryIcon,
+  ReactRouterIcon,
+  ReactJSIcon,
   ReduxIcon,
+  SQLIcon,
+  TailwindCSSIcon,
+  ThreeJSIcon,
+  TypescriptIcon,
 };
