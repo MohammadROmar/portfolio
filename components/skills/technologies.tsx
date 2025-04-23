@@ -1,18 +1,11 @@
-'use client';
-
-import { motion } from 'framer-motion';
-
+import { AnimatedList, AnimatedListItem } from '../shared/animation-wrappers';
 import { technologies } from '@/data/technologies';
-import { staggerAnimation } from '@/data/stagger-animation';
 
 export default function Technologies() {
   return (
-    <motion.ul
-      {...staggerAnimation(0.2)}
-      className="w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-    >
+    <AnimatedList className="w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {technologies.map(({ text, icon: Icon }) => (
-        <motion.li
+        <AnimatedListItem
           variants={{
             hidden: { opacity: 0, x: -10 },
             visible: { opacity: 1, x: 0 },
@@ -26,8 +19,8 @@ export default function Technologies() {
           <h4 className="text-sm md:text-base font-ibm-plex-mono text-white">
             {text}
           </h4>
-        </motion.li>
+        </AnimatedListItem>
       ))}
-    </motion.ul>
+    </AnimatedList>
   );
 }

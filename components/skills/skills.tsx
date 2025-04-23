@@ -1,18 +1,11 @@
-'use client';
-
-import { motion } from 'framer-motion';
-
 import { skills } from '@/data/skills';
-import { staggerAnimation } from '@/data/stagger-animation';
+import { AnimatedList, AnimatedListItem } from '../shared/animation-wrappers';
 
 export default function Skills() {
   return (
-    <motion.ul
-      {...staggerAnimation(0.5)}
-      className="flex max-md:flex-col gap-20 font-ibm-plex-mono text-xs text-background1 text-center"
-    >
+    <AnimatedList className="flex max-md:flex-col gap-20 font-ibm-plex-mono text-xs text-background1 text-center">
       {skills.map(({ text, subtext, icon: Icon }) => (
-        <motion.li
+        <AnimatedListItem
           variants={{
             hidden: { opacity: 0 },
             visible: { opacity: 1, scale: [1, 1.1, 1] },
@@ -25,8 +18,8 @@ export default function Skills() {
           <h4 className="text-lg">{text}</h4>
 
           <p>{subtext}</p>
-        </motion.li>
+        </AnimatedListItem>
       ))}
-    </motion.ul>
+    </AnimatedList>
   );
 }

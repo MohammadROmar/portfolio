@@ -1,15 +1,13 @@
-'use client';
-
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
+import { AnimatedListItem } from '../shared/animation-wrappers';
 import ProjectsLinks from './links';
 import TechnologiesUsed from './technologies';
 import type { Project } from '@/models/project';
 
 function ProjectCard(project: Project) {
   return (
-    <motion.li
+    <AnimatedListItem
       variants={{
         hidden: { opacity: 0, x: -10 },
         visible: { opacity: 1, x: 0 },
@@ -31,7 +29,7 @@ function ProjectCard(project: Project) {
       <hr className="text-gray-700" />
 
       <TechnologiesUsed technologies={project.technologies} />
-    </motion.li>
+    </AnimatedListItem>
   );
 }
 
