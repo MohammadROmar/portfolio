@@ -1,11 +1,13 @@
 import { CSSProperties } from 'react';
 
-import type { Project } from '@/models/project';
+type TechnologiesUsedProps = {
+  technologies: { name: string; color: string }[];
+};
 
-export default function ProjectsList({ project }: { project: Project }) {
+function TechnologiesUsed({ technologies }: TechnologiesUsedProps) {
   return (
     <ul className="flex flex-wrap items-center gap-2">
-      {project.technologies.map((tech) => (
+      {technologies.map((tech) => (
         <li key={tech.name}>
           <p
             className="text-[var(--tech-text-color)] text-xs"
@@ -18,3 +20,5 @@ export default function ProjectsList({ project }: { project: Project }) {
     </ul>
   );
 }
+
+export default TechnologiesUsed;

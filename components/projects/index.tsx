@@ -1,6 +1,5 @@
 import Title from '../shared/title';
-import ProjectCard from './card';
-import { projects } from '@/data/projects';
+import ProjectsList from './projects-list';
 
 export default function Projects() {
   return (
@@ -17,11 +16,7 @@ export default function Projects() {
         effectively."
       />
 
-      <ul className="max-container grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {projects.map((project) => (
-          <ProjectCard key={project.github} {...project} />
-        ))}
-      </ul>
+      <ProjectsList />
     </section>
   );
 }

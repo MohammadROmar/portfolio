@@ -1,12 +1,21 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 import ProjectsLinks from './links';
-import ProjectsList from './list';
+import TechnologiesUsed from './technologies';
 import type { Project } from '@/models/project';
 
 function ProjectCard(project: Project) {
   return (
-    <li className="flex flex-col gap-2 rounded-2xl bg-background1 p-3 shadow-lg shadow-brand1/5 hover:shadow-brand1/10 transition-shadow duration-300">
+    <motion.li
+      variants={{
+        hidden: { opacity: 0, x: -10 },
+        visible: { opacity: 1, x: 0 },
+      }}
+      className="flex flex-col gap-2 rounded-2xl bg-background1 p-3 shadow-lg shadow-brand1/5 hover:shadow-brand1/10 transition-shadow duration-300"
+    >
       <div className="relative rounded-lg overflow-hidden border border-brand1/50">
         <Image src={project.image} alt={project.title} />
 
@@ -21,8 +30,8 @@ function ProjectCard(project: Project) {
 
       <hr className="text-gray-700" />
 
-      <ProjectsList project={project} />
-    </li>
+      <TechnologiesUsed technologies={project.technologies} />
+    </motion.li>
   );
 }
 
