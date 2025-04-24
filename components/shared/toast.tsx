@@ -30,6 +30,7 @@ export default function Toast({ title, text, error }: ToastProps) {
           initial={{ y: 75, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 75, opacity: 0 }}
+          aria-live="polite"
           className={`max-w-sm px-2 py-1 flex justify-between items-center gap-4 fixed right-4 bottom-4 left-4 z-50 rounded-xl border-2 ${
             error
               ? 'border-danger bg-danger-light'

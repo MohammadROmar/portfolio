@@ -1,4 +1,5 @@
 import Title from '../shared/title';
+import AnimatedFragment from './fragment';
 import KnownSkills from './skills';
 import Technologies from './technologies';
 
@@ -13,9 +14,7 @@ export default function Skills() {
         subheading="I am striving to never stop learning and improving"
       />
 
-      <p className="text-8xl text-brand1 absolute top-4 lg:top-[7%] right-[15%] lg:right-[30%] max-md:hidden">
-        &lt;/&gt;
-      </p>
+      <AnimatedFragment />
 
       <KnownSkills />
 

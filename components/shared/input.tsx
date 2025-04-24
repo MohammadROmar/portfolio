@@ -1,26 +1,36 @@
-import type { ComponentPropsWithoutRef } from 'react';
+import type { InputProps, TextareaProps } from '@/models/input-component-props';
 
-type InputProps = {
-  id: string;
-  label: string;
-  error?: string;
-} & ComponentPropsWithoutRef<'input'>;
+function Input({ as, id, label, error, ...props }: InputProps | TextareaProps) {
+  let component = <></>;
+  const customProps = {
+    id,
+    name: id,
+    autoComplete: 'off',
+    className:
+      'w-full caret-brand1 border border-brand2/50 rounded-md p-2 outline-none bg-background1 resize-none',
+  };
 
-function Input({ id, label, error, ...props }: InputProps) {
+  if (as === 'input') {
+    component = <input {...customProps} {...(props as InputProps)} />;
+  } else {
+    component = (
+      <textarea
+        {...customProps}
+        rows={7}
+        maxLength={500}
+        {...(props as TextareaProps)}
+      />
+    );
+  }
+
   return (
     <div className="w-full flex flex-col gap-2">
-      <p className="w-full font-ubuntu text-sm flex flex-col gap-4">
-        <label htmlFor={id} className="text-brand1">
+      <p className="w-full font-ubuntu text-sm flex flex-col gap-1">
+        <label htmlFor={id} className="text-brand2">
           {label}
         </label>
 
-        <input
-          id={id}
-          name={id}
-          autoComplete="off"
-          {...props}
-          className="w-full caret-brand1 border-b border-brand1 outline-none"
-        />
+        {component}
       </p>
 
       {error && <p className="block text-xs text-red-400">{error}</p>}

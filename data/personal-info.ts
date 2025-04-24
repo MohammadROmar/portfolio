@@ -8,5 +8,5 @@ export const personalInfo: TextWithIcon[] = [
   { icon: MailIcon, text: 'mohammad.riyad.omar@gmail.com' },
   { icon: MapPinIcon, text: 'Damascus - Syria' },
   { icon: BriefcaseIcon, text: 'Full-time / Freelancer' },
-  { icon: LinkIcon, text: 'www.some-url.com' },
+  { icon: LinkIcon, text: 'mohammad-omar.vercel.app/' },
 ];

@@ -7,7 +7,8 @@ export default function LetsTalk() {
   return (
     <AnimationContainer
       initial={{ opacity: 0, rotate: -15 }}
-      animate={{ opacity: 1, rotate: 0 }}
+      whileInView={{ opacity: 1, rotate: 0 }}
+      viewport={{ once: true }}
       transition={{ delay: 3.25 }}
       className="origin-left"
     >

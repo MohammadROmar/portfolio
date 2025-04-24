@@ -9,7 +9,8 @@ export default function AnimatedText({ text }: { text: string }) {
         <span key={`${letter} ${i}`} className="relative">
           <motion.span
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0, delay: 0.026 * i }}
           >
             {letter}

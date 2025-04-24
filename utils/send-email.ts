@@ -1,24 +1,12 @@
+import { validateFormData } from './validate-form-data';
+
 export async function sendEmail(event: React.FormEvent<HTMLFormElement>) {
   const formData = new FormData(event.currentTarget);
   const data = Object.fromEntries(formData.entries());
   const { name, email, message } = data as { [key: string]: string };
 
-  const errors: { [key: string]: string } = {};
-
-  if (!name || name.trim().length === 0) {
-    errors.name = 'Name is required';
-  }
-
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    errors.email = 'Email is invalid';
-  }
-
-  if (!message || message.trim().length === 0) {
-    errors.message = 'Message is required';
-  }
-
-  if (errors.name || errors.email || errors.message) {
+  const errors = validateFormData({ name, email, message });
+  if (Object.keys(errors).length > 0) {
     return { errors, failed: true };
   }
 
@@ -27,6 +15,7 @@ export async function sendEmail(event: React.FormEvent<HTMLFormElement>) {
     day: '2-digit',
     year: 'numeric',
   });
+
   const emailContent = {
     name,
     time,
