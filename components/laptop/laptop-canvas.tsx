@@ -1,13 +1,13 @@
 'use client';
 
-import { Suspense } from 'react';
+import { memo, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload } from '@react-three/drei';
 
 import Scene from './scene';
 import LoadingIndecator from './loading-indecator';
 
-export default function LaptopCanvas() {
+function LaptopCanvas() {
   return (
     <Canvas
       camera={{ position: [-20, 3, -30] }}
@@ -28,3 +28,5 @@ export default function LaptopCanvas() {
     </Canvas>
   );
 }
+
+export default memo(LaptopCanvas);
