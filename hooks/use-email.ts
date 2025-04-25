@@ -10,31 +10,32 @@ export default function useEmail() {
   const [pending, setPending] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
+  function resetFormState() {
+    setPending(true);
+    setErrors({});
+    setEmailState('waiting');
+  }
+
   const handleFormSubmission = useCallback(
     async (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-
-      setPending(true);
-      setErrors({});
-      setEmailState('waiting');
+      resetFormState();
 
       try {
-        const result = await sendEmail(event);
-        const errors = result.errors;
-        const errorsNumber = Object.keys(errors).length;
+        const { errors, failed } = await sendEmail(event);
 
-        if (errorsNumber > 0) {
+        if (Object.keys(errors).length > 0) {
           setErrors(errors);
-        } else if (result.failed) {
+        } else if (failed) {
           setEmailState('failed');
-        } else if (!result.failed) {
+        } else {
           setEmailState('sent');
         }
       } catch (_) {
         setEmailState('failed');
+      } finally {
+        setPending(false);
       }
-
-      setPending(false);
     },
     []
   );

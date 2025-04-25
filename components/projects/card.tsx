@@ -12,7 +12,7 @@ function ProjectCard(project: Project) {
         hidden: { opacity: 0, x: -10 },
         visible: { opacity: 1, x: 0 },
       }}
-      className="flex flex-col gap-2 rounded-2xl bg-background1 p-3 shadow-lg shadow-brand1/5 hover:shadow-brand1/10 transition-shadow duration-300"
+      className="flex flex-col gap-2 rounded-2xl bg-background1 p-3 shadow-lg shadow-brand1/5 hover:shadow-brand1/10 transition-shadow duration-500"
     >
       <div className="relative rounded-lg overflow-hidden border border-brand1/50">
         <Image src={project.image} alt={project.title} />

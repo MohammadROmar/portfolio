@@ -1,9 +1,10 @@
 'use client';
 
+import { motion } from 'framer-motion';
+
 import EmailToast from './email-toast';
 import useEmail from '@/hooks/use-email';
 import FormContent from './form-content';
-import { motion } from 'framer-motion';
 
 export default function ContactForm() {
   const { emailState, pending, errors, handleFormSubmission } = useEmail();

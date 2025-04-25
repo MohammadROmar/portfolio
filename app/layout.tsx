@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Ubuntu, IBM_Plex_Mono } from 'next/font/google';
 
 import Header from '@/components/header';
 import NavigationBar from '@/components/nav-bar';
@@ -10,10 +11,24 @@ export const metadata: Metadata = {
   description: 'Mohammad Omar personal portfolio',
 };
 
+const ubuntuFont = Ubuntu({
+  preload: true,
+  weight: ['300', '400', '500'],
+  variable: '--font-ubuntu',
+});
+
+const ibmPlexMonoFont = IBM_Plex_Mono({
+  preload: true,
+  weight: ['400', '500'],
+  variable: '--font-ibm-plex-mono',
+});
+
 function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="antialiased font-ubuntu bg-background1 text-white">
+      <body
+        className={`antialiased ${ubuntuFont.variable} ${ibmPlexMonoFont.variable} font-ubuntu bg-background1 text-white`}
+      >
         <div id="toasts" />
 
         <Header />

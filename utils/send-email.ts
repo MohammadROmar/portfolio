@@ -1,4 +1,5 @@
 import { validateFormData } from './validate-form-data';
+import { getTime } from './get-time';
 
 export async function sendEmail(event: React.FormEvent<HTMLFormElement>) {
   const formData = new FormData(event.currentTarget);
@@ -10,11 +11,7 @@ export async function sendEmail(event: React.FormEvent<HTMLFormElement>) {
     return { errors, failed: true };
   }
 
-  const time = new Date().toLocaleString(undefined, {
-    month: 'short',
-    day: '2-digit',
-    year: 'numeric',
-  });
+  const time = getTime();
 
   const emailContent = {
     name,
@@ -25,7 +22,6 @@ export async function sendEmail(event: React.FormEvent<HTMLFormElement>) {
   };
 
   const emailjs = (await import('@emailjs/browser')).default;
-
   const emailStatus = await emailjs.send(
     process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
     process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,

@@ -5,7 +5,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload } from '@react-three/drei';
 
 import Scene from './scene';
-import LoadingIndecator from './loading-indecator';
+import LoadingIndecator from './loading-indicator';
 
 function LaptopCanvas() {
   return (

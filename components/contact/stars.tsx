@@ -20,14 +20,9 @@ export default function Stars() {
   }, []);
 
   return (
-    <group rotation={[0, 0, Math.PI / 4]}>
+    <group>
       <Points ref={starsRef} positions={points} stride={3} frustumCulled>
-        <PointMaterial
-          transparent
-          color="#f272c8"
-          size={0.002}
-          depthWrite={false}
-        />
+        <PointMaterial transparent color="white" size={0.002} />
       </Points>
     </group>
   );
