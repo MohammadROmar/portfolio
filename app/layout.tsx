@@ -13,13 +13,15 @@ export const metadata: Metadata = {
 
 const ubuntuFont = Ubuntu({
   preload: true,
-  weight: ['300', '400', '500'],
+  weight: '400',
+  subsets: ['latin'],
   variable: '--font-ubuntu',
 });
 
 const ibmPlexMonoFont = IBM_Plex_Mono({
   preload: true,
-  weight: ['400', '500'],
+  weight: '400',
+  subsets: ['latin'],
   variable: '--font-ibm-plex-mono',
 });
 
