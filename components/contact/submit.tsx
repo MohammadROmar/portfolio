@@ -10,7 +10,7 @@ export default function ContactFormSubmit({ pending }: { pending: boolean }) {
     <button
       type="submit"
       disabled={pending}
-      className="px-6 py-2 flex items-center text-lg rounded-full text-background1 bg-brand1 cursor-pointer disabled:bg-[#0b8a77] disabled:"
+      className="px-6 py-2 flex items-center text-lg rounded-full text-background1 bg-brand1 cursor-pointer disabled:bg-[#0b8a77]"
     >
       <ButtonText pending={pending} />
       {pending ? (

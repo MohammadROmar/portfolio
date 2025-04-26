@@ -16,7 +16,7 @@ export function revealAnimation({ x, y, width, margin }: RevealAnimationProps) {
       width: width !== undefined ? 'auto' : undefined,
       opacity: 1,
     },
-    viewport: { once: true, margin: margin !== undefined ? margin : '-200px' },
+    viewport: { once: true, margin: margin !== undefined ? margin : '-100px' },
     transition: { duration: 0.5 },
   } satisfies MotionProps;
 }
