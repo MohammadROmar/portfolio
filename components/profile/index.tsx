@@ -2,6 +2,8 @@ import AboutMe from './about-me';
 import Details from './details';
 import CoreSkills from './core-skills';
 import DownloadCV from './download-cv';
+import AnimationContainer from '../shared/animation-container';
+import { revealAnimation } from '@/utils/reveal-animation';
 
 export default function Profile({ rounded }: { rounded?: boolean }) {
   const styles = `w-fit h-fit flex flex-col gap-6 items-center relative px-4 py-6 bg-background1 ${
@@ -11,7 +13,7 @@ export default function Profile({ rounded }: { rounded?: boolean }) {
   }`;
 
   return (
-    <div className="animate-slide-right">
+    <AnimationContainer {...revealAnimation({ x: -75 })}>
       <div className={styles}>
         <AboutMe />
 
@@ -21,6 +23,6 @@ export default function Profile({ rounded }: { rounded?: boolean }) {
 
         <DownloadCV />
       </div>
-    </div>
+    </AnimationContainer>
   );
 }

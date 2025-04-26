@@ -9,7 +9,7 @@ export default function LetsTalk() {
       initial={{ opacity: 0, rotate: -15 }}
       whileInView={{ opacity: 1, rotate: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: 3.25 }}
+      transition={{ delay: 3.5 }}
       className="origin-left"
     >
       <Link

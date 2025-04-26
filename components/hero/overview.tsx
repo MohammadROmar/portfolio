@@ -1,10 +1,15 @@
+import AnimationContainer from '../shared/animation-container';
 import CodeTag from '../shared/code-tag';
 import AnimatedText from '../shared/animated-text';
 import LetsTalk from './lets-talk';
+import { revealAnimation } from '@/utils/reveal-animation';
 
 export default function Overview() {
   return (
-    <div className="w-fit h-fit space-y-4 animate-slide-up">
+    <AnimationContainer
+      {...revealAnimation({ y: 75 })}
+      className="w-fit h-fit space-y-4"
+    >
       <CodeTag
         tag="h1"
         className="text-3xl md:text-5xl lg:text-6xl flex flex-col"
@@ -21,6 +26,6 @@ export default function Overview() {
       </CodeTag>
 
       <LetsTalk />
-    </div>
+    </AnimationContainer>
   );
 }
