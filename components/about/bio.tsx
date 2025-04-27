@@ -2,9 +2,9 @@ import CodeTag from '../shared/code-tag';
 
 export default function Bio() {
   return (
-    <div className="max-w-3xl text-xs p-4 rounded-3xl bg-background1">
+    <div className="bg-background1 max-w-3xl rounded-3xl p-4 text-xs">
       <CodeTag tag="p" className="font-ibm-plex-mono flex flex-col gap-2">
-        <span className="font-ubuntu font-medium text-xl text-brand1">
+        <span className="font-ubuntu text-brand1 text-xl font-medium">
           Hello!
         </span>
         <span>

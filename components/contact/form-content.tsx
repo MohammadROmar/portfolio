@@ -6,7 +6,7 @@ type FormContentProps = { pending: boolean; errors: { [key: string]: string } };
 export default function FormContent({ pending, errors }: FormContentProps) {
   return (
     <>
-      <div className="w-full lg:w-fit xl:w-full flex max-sm:flex-col gap-4 md:gap-8 lg:gap-16">
+      <div className="flex w-full gap-4 max-sm:flex-col md:gap-8 lg:w-fit lg:gap-16 xl:w-full">
         <Input
           as="input"
           id="name"

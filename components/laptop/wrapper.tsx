@@ -12,19 +12,19 @@ function LaptopWrapper({ children }: PropsWithChildren) {
       modelRef.current.rotation.x = THREE.MathUtils.lerp(
         modelRef.current.rotation.x,
         Math.cos(t / 2) / 20 + 0.25,
-        0.5
+        0.5,
       );
 
       modelRef.current.rotation.z = THREE.MathUtils.lerp(
         modelRef.current.rotation.z,
         Math.sin(t / 8) / 20,
-        0.1
+        0.1,
       );
 
       modelRef.current.position.y = THREE.MathUtils.lerp(
         modelRef.current.position.y,
         (-2 + Math.sin(t / 2)) / 2,
-        0.1
+        0.1,
       );
     }
   });

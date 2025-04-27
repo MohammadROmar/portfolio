@@ -37,7 +37,7 @@ export default function useEmail() {
         setPending(false);
       }
     },
-    []
+    [],
   );
 
   return { emailState, pending, errors, handleFormSubmission };

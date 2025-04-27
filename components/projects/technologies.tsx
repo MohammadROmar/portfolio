@@ -10,7 +10,7 @@ function TechnologiesUsed({ technologies }: TechnologiesUsedProps) {
       {technologies.map((tech) => (
         <li key={tech.name}>
           <p
-            className="text-[var(--tech-text-color)] text-xs"
+            className="text-xs text-[var(--tech-text-color)]"
             style={{ '--tech-text-color': tech.color } as CSSProperties}
           >
             {tech.name}

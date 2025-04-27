@@ -1,5 +1,5 @@
 export default function ReduxIcon(
-  props: React.ComponentPropsWithoutRef<'svg'>
+  props: React.ComponentPropsWithoutRef<'svg'>,
 ) {
   return (
     <svg

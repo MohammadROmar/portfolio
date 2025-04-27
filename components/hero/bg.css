@@ -1,5 +1,6 @@
 .hero-bg {
-  background-image: radial-gradient(
+  background-image:
+    radial-gradient(
       circle at 20% 0%,
       #8a8ff059 3.1210986267166043%,
       transparent 40%

@@ -1,5 +1,5 @@
 export default function ThreeJSIcon(
-  props: React.ComponentPropsWithoutRef<'svg'>
+  props: React.ComponentPropsWithoutRef<'svg'>,
 ) {
   return (
     <svg

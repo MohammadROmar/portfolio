@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="spacing flex flex-col  justify-center items-center min-h-screen bg-background2 bg-[url(/patterns/pattern3.png)] md:bg-[length:70%_100%] lg:bg-[length:46%_60%] xl:bg-[length:33%_75%] space-y-8 relative z-0"
+      className="spacing bg-background2 relative z-0 flex min-h-screen flex-col items-center justify-center space-y-8 bg-[url(/patterns/pattern3.png)] md:bg-[length:70%_100%] lg:bg-[length:46%_60%] xl:bg-[length:33%_75%]"
     >
       <Title
         heading="Projects"

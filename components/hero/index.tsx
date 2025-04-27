@@ -7,10 +7,10 @@ import './bg.css';
 export default function Hero() {
   return (
     <section className="hero-bg">
-      <div className="max-container spacing mx-auto min-h-screen max-lg:pt-22 grid lg:grid-cols-[auto_auto] gap-4 gap-y-8 items-center place-items-center">
+      <div className="max-container spacing mx-auto grid min-h-screen place-items-center items-center gap-4 gap-y-8 max-lg:pt-22 lg:grid-cols-[auto_auto]">
         <Profile rounded />
 
-        <div className="grid md:grid-cols-[auto_auto] items-center place-items-center gap-4 gap-y-8 place-self-stretch">
+        <div className="grid place-items-center items-center gap-4 gap-y-8 place-self-stretch md:grid-cols-[auto_auto]">
           <Overview />
 
           <Tools />

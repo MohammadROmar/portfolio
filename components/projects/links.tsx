@@ -5,13 +5,13 @@ type ProjectsLinksProps = { github: string; demo?: string };
 
 function ProjectsLinks({ github, demo }: ProjectsLinksProps) {
   return (
-    <div className="flex items-center gap-1 absolute top-1.5 right-1.5">
+    <div className="absolute top-1.5 right-1.5 flex items-center gap-1">
       {demo && (
         <a
           href={demo}
           target="_blank"
           rel="noopener noreferrer"
-          className="size-8 p-2 bg-background1 rounded-full"
+          className="bg-background1 size-8 rounded-full p-2"
         >
           <LinkIcon />
         </a>
@@ -21,7 +21,7 @@ function ProjectsLinks({ github, demo }: ProjectsLinksProps) {
         href={github}
         target="_blank"
         rel="noopener noreferrer"
-        className="size-8 p-1 bg-background1 rounded-full"
+        className="bg-background1 size-8 rounded-full p-1"
       >
         <GithubIcon />
       </a>

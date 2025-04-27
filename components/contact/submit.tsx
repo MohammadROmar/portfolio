@@ -10,13 +10,13 @@ export default function ContactFormSubmit({ pending }: { pending: boolean }) {
     <button
       type="submit"
       disabled={pending}
-      className="px-6 py-2 flex items-center text-lg rounded-full text-background1 bg-brand1 cursor-pointer disabled:bg-[#0b8a77]"
+      className="text-background1 bg-brand1 flex cursor-pointer items-center rounded-full px-6 py-2 text-lg disabled:bg-[#0b8a77]"
     >
       <ButtonText pending={pending} />
       {pending ? (
-        <LoadingSpinner className="size-5 animate-spin ml-4" />
+        <LoadingSpinner className="ml-4 size-5 animate-spin" />
       ) : (
-        <SendIcon className="size-5 ml-4" />
+        <SendIcon className="ml-4 size-5" />
       )}
     </button>
   );

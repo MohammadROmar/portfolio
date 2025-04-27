@@ -9,7 +9,7 @@ function SocialmediaLink({ label, to, icon: Icon }: SocialmediaLinkProps) {
         rel="noopener noreferrer"
         className="flex items-center gap-1"
       >
-        <Icon className="size-4 text-brand1" />
+        <Icon className="text-brand1 size-4" />
         <p className="font-ibm-plex-mono text-xs max-lg:hidden">{label}</p>
       </a>
     </li>

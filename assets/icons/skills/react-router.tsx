@@ -1,5 +1,5 @@
 export default function ReactRouterIcon(
-  props: React.ComponentPropsWithoutRef<'svg'>
+  props: React.ComponentPropsWithoutRef<'svg'>,
 ) {
   return (
     <svg

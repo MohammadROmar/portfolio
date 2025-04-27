@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @layer base {
   @supports not (-webkit-font-smoothing: antialiased) {
@@ -12,11 +12,11 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-background1 border sm:border-2 border-brand1 rounded-full;
+    @apply bg-background1 border-brand1 rounded-full border sm:border-2;
   }
 
   ::-webkit-scrollbar-track {
-    @apply my-2 bg-brand1 rounded-full cursor-pointer border-2 sm:border-4 border-background1;
+    @apply bg-brand1 border-background1 my-2 cursor-pointer rounded-full border-2 sm:border-4;
   }
 }
 
@@ -42,7 +42,7 @@
 }
 
 @utility max-container {
-  @apply max-w-[1440px] mx-auto;
+  @apply mx-auto max-w-[1440px];
 }
 
 @utility spacing {

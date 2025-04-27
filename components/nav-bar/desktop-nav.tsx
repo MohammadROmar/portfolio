@@ -10,16 +10,16 @@ export default function DesktopNavigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <aside className="absolute left-12 top-24 flex flex-col items-center rounded-full p-1 bg-background2 border border-white max-md:hidden">
+    <aside className="bg-background2 absolute top-24 left-12 flex flex-col items-center rounded-full border border-white p-1 max-md:hidden">
       <motion.button
         animate={{
           rotate: isOpen ? 90 : 0,
           transition: { delay: isOpen ? 0 : 0.25 },
         }}
         onClick={() => setIsOpen((prevValue) => !prevValue)}
-        className="p-2 rounded-full bg-white cursor-pointer"
+        className="cursor-pointer rounded-full bg-white p-2"
       >
-        <GridIcon className="size-5 text-background2" />
+        <GridIcon className="text-background2 size-5" />
       </motion.button>
 
       <nav>

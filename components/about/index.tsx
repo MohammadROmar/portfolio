@@ -7,14 +7,14 @@ export default function About() {
   return (
     <section
       id="about"
-      className="lg:spacing min-h-screen flex items-center bg-background2 bg-[url(/patterns/pattern1.png)] bg-cover bg-center"
+      className="lg:spacing bg-background2 flex min-h-screen items-center bg-[url(/patterns/pattern1.png)] bg-cover bg-center"
     >
-      <div className="max-container w-full grid grid-cols-1 lg:grid-cols-7 place-items-center items-center gap-x-16 xl:gap-x-32">
+      <div className="max-container grid w-full grid-cols-1 place-items-center items-center gap-x-16 lg:grid-cols-7 xl:gap-x-32">
         <AnimationContainer
           {...revealAnimation({ x: -75 })}
-          className="max-lg:spacing max-lg:pb-0 space-y-8 col-span-4"
+          className="max-lg:spacing col-span-4 space-y-8 max-lg:pb-0"
         >
-          <h3 className="w-fit text-3xl px-4 py-1 border-[3px] border-brand2 rounded-tl-2xl rounded-br-2xl bg-background1 xl:pl-32 xl:pr-16">
+          <h3 className="border-brand2 bg-background1 w-fit rounded-tl-2xl rounded-br-2xl border-[3px] px-4 py-1 text-3xl xl:pr-16 xl:pl-32">
             About Me
           </h3>
 
@@ -23,7 +23,7 @@ export default function About() {
 
         <AnimationContainer
           {...revealAnimation({ x: 75 })}
-          className="w-full h-[50vh] md:h-[70vh] max-lg:col-span-4 col-span-3"
+          className="col-span-3 h-[50vh] w-full max-lg:col-span-4 md:h-[70vh]"
         >
           <LaptopCanvas />
         </AnimationContainer>

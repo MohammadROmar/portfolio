@@ -5,22 +5,22 @@ type TitleProps = { heading: string; subheading: string };
 
 function Title({ heading, subheading }: TitleProps) {
   return (
-    <div className="flex flex-col justify-center items-center text-center">
+    <div className="flex flex-col items-center justify-center text-center">
       <AnimationContainer
         {...revealAnimation({ width: 0, margin: '-100px' })}
         className="w-min space-y-2"
       >
-        <h3 className="text-5xl text-brand1 text-center overflow-hidden">
+        <h3 className="text-brand1 overflow-hidden text-center text-5xl">
           {heading}
         </h3>
 
-        <div className="w-full relative before:absolute before:left-0 before:bottom-1/2 before:translate-y-1/2 before:rounded-full before:w-1.5 before:h-1.5 before:bg-brand1 after:absolute after:right-0 after:bottom-1/2 after:translate-y-1/2 after:rounded-full after:w-1.5 after:h-1.5 after:bg-brand1">
-          <hr className="absolute right-0 left-0 bottom-0 text-brand1" />
+        <div className="before:bg-brand1 after:bg-brand1 relative w-full before:absolute before:bottom-1/2 before:left-0 before:h-1.5 before:w-1.5 before:translate-y-1/2 before:rounded-full after:absolute after:right-0 after:bottom-1/2 after:h-1.5 after:w-1.5 after:translate-y-1/2 after:rounded-full">
+          <hr className="text-brand1 absolute right-0 bottom-0 left-0" />
         </div>
       </AnimationContainer>
 
       <AnimationContainer {...revealAnimation({ margin: '-100px' })}>
-        <p className="max-w-3xl font-ibm-plex-mono text-xs pt-2">
+        <p className="font-ibm-plex-mono max-w-3xl pt-2 text-xs">
           {subheading}
         </p>
       </AnimationContainer>

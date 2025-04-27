@@ -11,7 +11,7 @@ function LaptopCanvas() {
   return (
     <Canvas
       camera={{ position: [-20, 3, -30] }}
-      className="w-full h-full bg-transparent"
+      className="h-full w-full bg-transparent"
     >
       <Suspense fallback={<LoadingIndecator />}>
         <Preload all />

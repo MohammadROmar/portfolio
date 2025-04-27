@@ -22,7 +22,7 @@ export default function ContactForm() {
         }}
         viewport={{ once: true, margin: '-100px' }}
         onSubmit={handleFormSubmission}
-        className="w-full lg:w-fit xl:w-full flex flex-col justify-center items-center max-sm:gap-4 gap-12 bg-background2/50 p-4 rounded-xl"
+        className="bg-background2/50 flex w-full flex-col items-center justify-center gap-12 rounded-xl p-4 max-sm:gap-4 lg:w-fit xl:w-full"
       >
         <FormContent pending={pending} errors={errors} />
       </motion.form>

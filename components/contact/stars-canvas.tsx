@@ -8,7 +8,7 @@ import Stars from './stars';
 
 export default function StarsCanvas() {
   return (
-    <div className="w-full h-full absolute inset-0 -z-10">
+    <div className="absolute inset-0 -z-10 h-full w-full">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Preload all />
 

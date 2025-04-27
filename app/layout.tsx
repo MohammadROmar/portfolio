@@ -1,28 +1,29 @@
-import type { Metadata } from 'next';
-import { Ubuntu, IBM_Plex_Mono } from 'next/font/google';
+import type { Metadata } from "next";
+import { Ubuntu, IBM_Plex_Mono } from "next/font/google";
 
-import Header from '@/components/header';
-import NavigationBar from '@/components/nav-bar';
-import Footer from '@/components/footer';
-import './globals.css';
+import Header from "@/components/header";
+import NavigationBar from "@/components/nav-bar";
+import Footer from "@/components/footer";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'MohammadROmar',
-  description: 'Mohammad Omar personal portfolio',
+  title: "MohammadROmar",
+  description: "Mohammad Omar personal portfolio",
+  twitter: { card: "summary_large_image" },
 };
 
 const ubuntuFont = Ubuntu({
   preload: true,
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-ubuntu',
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-ubuntu",
 });
 
 const ibmPlexMonoFont = IBM_Plex_Mono({
   preload: true,
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-ibm-plex-mono',
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-ibm-plex-mono",
 });
 
 function RootLayout({ children }: React.PropsWithChildren) {

@@ -24,8 +24,8 @@ function Input({ as, id, label, error, ...props }: InputProps | TextareaProps) {
   }
 
   return (
-    <div className="w-full flex flex-col gap-2">
-      <p className="w-full font-ubuntu text-sm flex flex-col gap-1">
+    <div className="flex w-full flex-col gap-2">
+      <p className="font-ubuntu flex w-full flex-col gap-1 text-sm">
         <label htmlFor={id} className="text-brand2">
           {label}
         </label>

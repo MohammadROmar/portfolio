@@ -8,11 +8,11 @@ export default function Overview() {
   return (
     <AnimationContainer
       {...revealAnimation({ y: 75 })}
-      className="w-fit h-fit space-y-4"
+      className="h-fit w-fit space-y-4"
     >
       <CodeTag
         tag="h1"
-        className="text-3xl md:text-5xl lg:text-6xl flex flex-col"
+        className="flex flex-col text-3xl md:text-5xl lg:text-6xl"
       >
         <span>Hey</span>
         <span>
@@ -21,7 +21,7 @@ export default function Overview() {
         <span>Front-End Developer</span>
       </CodeTag>
 
-      <CodeTag tag="p" className="max-w-lg font-ibm-plex-mono text-xs">
+      <CodeTag tag="p" className="font-ibm-plex-mono max-w-lg text-xs">
         <AnimatedText text="I help business grow by crafting amazing web experiences. If you're looking for a developer that likes to get stuff done," />
       </CodeTag>
 

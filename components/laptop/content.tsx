@@ -8,9 +8,9 @@ function LaptopContent() {
       position={[0, 10.65, -10.67]}
       transform
       occlude="blending"
-      className="w-[1182] h-[685] bg-background1 overflow-hidden"
+      className="bg-background1 h-[685] w-[1182] overflow-hidden"
     >
-      <div className="w-full h-full flex justify-center items-center scale-150">
+      <div className="flex h-full w-full scale-150 items-center justify-center">
         <Profile />
       </div>
     </Html>

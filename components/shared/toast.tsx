@@ -31,7 +31,7 @@ export default function Toast({ title, text, error }: ToastProps) {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 75, opacity: 0 }}
           aria-live="polite"
-          className={`max-w-sm px-2 py-1 flex justify-between items-center gap-4 fixed right-4 bottom-4 left-4 z-50 rounded-xl border-2 ${
+          className={`fixed right-4 bottom-4 left-4 z-50 flex max-w-sm items-center justify-between gap-4 rounded-xl border-2 px-2 py-1 ${
             error
               ? 'border-danger bg-danger-light'
               : 'border-success bg-success-light'
@@ -39,9 +39,9 @@ export default function Toast({ title, text, error }: ToastProps) {
         >
           <div className="flex items-center gap-4">
             {error ? (
-              <XMark className="size-5 box-content p-2 bg-danger text-danger-light rounded-full" />
+              <XMark className="bg-danger text-danger-light box-content size-5 rounded-full p-2" />
             ) : (
-              <CkeckMark className="size-5 box-content p-2 bg-success text-success-light rounded-full" />
+              <CkeckMark className="bg-success text-success-light box-content size-5 rounded-full p-2" />
             )}
 
             <div>
@@ -58,13 +58,13 @@ export default function Toast({ title, text, error }: ToastProps) {
 
           <button
             onClick={() => setVisible(false)}
-            className="text-background1/60 rounded-lg box-content p-0.5 cursor-pointer hover:text-background1 max-sm:hidden hover:bg-white transition-colors duration-300"
+            className="text-background1/60 hover:text-background1 box-content cursor-pointer rounded-lg p-0.5 transition-colors duration-300 hover:bg-white max-sm:hidden"
           >
             <XMark className="size-5" />
           </button>
         </motion.div>
       )}
     </AnimatePresence>,
-    document.getElementById('toasts')!
+    document.getElementById('toasts')!,
   );
 }

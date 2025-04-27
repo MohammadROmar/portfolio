@@ -2,16 +2,16 @@ import { socialmediaLinks } from '@/data/socialmedia-links';
 
 export default function Footer() {
   return (
-    <footer className="max-container p-2 flex max-md:flex-col justify-around items-center gap-4 border-t border-gray-700">
-      <p className="order-2 md:order-1 text-xs text-center">
+    <footer className="max-container flex items-center justify-around gap-4 border-t border-gray-700 p-2 max-md:flex-col">
+      <p className="order-2 text-center text-xs md:order-1">
         &copy; {new Date().getFullYear()} Mohammad Omar, All rights reserved.
       </p>
 
-      <ul className="order-1 md:order-2 flex items-center gap-4">
+      <ul className="order-1 flex items-center gap-4 md:order-2">
         {socialmediaLinks.map(({ label, icon: Icon, to }, i) => (
           <li key={label}>
             <a href={to} target="_blank" rel="noopener noreferrer">
-              <Icon className="size-4 p-1 box-content text-background1 rounded-full bg-brand1" />
+              <Icon className="text-background1 bg-brand1 box-content size-4 rounded-full p-1" />
             </a>
           </li>
         ))}

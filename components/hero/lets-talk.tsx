@@ -15,11 +15,11 @@ export default function LetsTalk() {
       <Link
         href="/#contact"
         prefetch={false}
-        className="w-fit ml-4 flex items-center gap-4"
+        className="ml-4 flex w-fit items-center gap-4"
       >
-        <p className="text-3xl text-brand1">Let's Talk</p>
+        <p className="text-brand1 text-3xl">Let's Talk</p>
         <div className="rounded-full bg-gray-700 p-2">
-          <MailIcon className="size-5 text-brand1" />
+          <MailIcon className="text-brand1 size-5" />
         </div>
       </Link>
     </AnimationContainer>
