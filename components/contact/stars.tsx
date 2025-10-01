@@ -20,10 +20,8 @@ export default function Stars() {
   }, []);
 
   return (
-    <group>
-      <Points ref={starsRef} positions={points} stride={3} frustumCulled>
-        <PointMaterial transparent color="white" size={0.002} />
-      </Points>
-    </group>
+    <Points ref={starsRef} positions={points} stride={3} frustumCulled>
+      <PointMaterial transparent color="white" size={0.002} />
+    </Points>
   );
 }
